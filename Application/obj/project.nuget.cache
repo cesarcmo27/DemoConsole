@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "JIILKhmUn8UQ7+wkd5qJvU3opIh5A81rmY6022GJrhuwKMjJ1Kqtb3FbmM9KUZUMcMC98ZfPeuDKMXl7MeMx2A==",
+  "dgSpecHash": "f9oMBPkvNhOQsVlrZJ9NYZXJci13fAz3wNKgePVt4DfoQsBSE9y1ETeCDE4sIKT8pwWxwWYBVaqM0CSHcQjStQ==",
   "success": true,
   "projectFilePath": "C:\\desarrollo\\demoC#\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CESAR\\.nuget\\packages\\htmlagilitypack.netcore\\1.5.0.1\\htmlagilitypack.netcore.1.5.0.1.nupkg.sha512",
+    "C:\\Users\\CESAR\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\CESAR\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\CESAR\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.6\\microsoft.data.sqlite.core.5.0.6.nupkg.sha512",
     "C:\\Users\\CESAR\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",
     "C:\\Users\\CESAR\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.6\\microsoft.entityframeworkcore.5.0.6.nupkg.sha512",

@@ -17,6 +17,10 @@ namespace Persistence
 
 
         public DbSet<Site> WebSites { get; set; }
+        public DbSet<Order> Order { get; set; }
+
+        public DbSet<OrderDetail> OrderDetail { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             if (!options.IsConfigured)
@@ -25,9 +29,16 @@ namespace Persistence
             }
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
-            base.OnModelCreating(modelBuilder);
+            base.OnModelCreating(builder);
+
+            builder.Entity<OrderDetail>()
+                .HasOne(u => u.Order)
+                .WithMany(a => a.OrderDetails)
+                .HasForeignKey(u => u.OrderId);
+
+          
         }
 
     }
