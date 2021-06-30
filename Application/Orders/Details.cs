@@ -3,6 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Domain;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Persistence;
 
 namespace Application.Orders
@@ -23,7 +24,7 @@ namespace Application.Orders
             }
             public async Task<Order> Handle(Query request, CancellationToken cancellationToken)
             {
-                return await _context.Order.FindAsync(request.Id);
+                return await _context.Order.Include(x => x.OrderDetails).SingleOrDefaultAsync(x => x.Id == request.Id);
             }
         }
     

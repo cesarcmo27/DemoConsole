@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Threading;
+
 using System.Threading.Tasks;
 using Domain;
 using MediatR;
@@ -22,7 +23,9 @@ namespace Application.Orders
 
             public async Task<List<Order>> Handle(Query request, CancellationToken cancellationToken)
             {
-                return await _context.Order.ToListAsync();
+              // string a = null;
+               //int b =  a.Length;
+                return await _context.Order.Include(x => x.OrderDetails).ToListAsync();
             }
         }
     }
